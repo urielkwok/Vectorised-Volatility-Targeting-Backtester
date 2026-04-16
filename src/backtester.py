@@ -16,6 +16,7 @@ def vol_backtest(prices, target_vol=0.15, lookback=20, max_leverage=2.0):
     results = pd.DataFrame({
         "base_returns": base_returns,
         "total_base_returns": total_base_returns,
+        "weights": weight_used,
         "daily_vol_returns": daily_vol_returns,
         "total_vol_returns": total_vol_returns
     }).dropna()

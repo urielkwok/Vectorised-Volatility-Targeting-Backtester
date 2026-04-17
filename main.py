@@ -3,7 +3,7 @@ import src.data_loader as dl
 import src.backtester as bt
 import src.visualizer as vz
 
-TICKER = "GOOGL"
+TICKER = "PHM"
 
 prices = dl.pull_data(TICKER)
 daily_risk_free = prices["^IRX"] / (252*100)

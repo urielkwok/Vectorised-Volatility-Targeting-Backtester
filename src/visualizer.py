@@ -11,4 +11,4 @@ def create_plots(results):
     plt.plot(total_vol_returns, label="strategy returns")
     plt.legend()
     plt.tight_layout()
-    plt.show()
+    plt.savefig("data.png")
